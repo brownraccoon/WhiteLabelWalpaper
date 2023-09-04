@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "899311943774",
+    "project_id": "whitelabel-godwallpaper-a9dca",
+    "storage_bucket": "whitelabel-godwallpaper-a9dca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899311943774:android:5412227d3a90c5fcf874cf",
+        "android_client_info": {
+          "package_name": "com.br.godwallpaper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899311943774-2taqguap542inmmftevkj5tub2gjjtag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtqNQhQa3X8lnQUQBdpzvy0FxAGt1YyZ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899311943774-2taqguap542inmmftevkj5tub2gjjtag.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

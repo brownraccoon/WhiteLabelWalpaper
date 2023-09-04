@@ -1,0 +1,106 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    ext {
+        gradle_version = '8.1.0'
+        kotlin_plugin = '1.6.21'
+        kotlin_version = '1.10.1'
+        kotlin_std_lib = '1.9.10'
+
+        // Android SDK
+        compileSdkVersion = 34
+        minSdkVersion = 26
+        targetSdkVersion = 34
+        javaVersion = JavaVersion.VERSION_17
+        jvmTargetVersion = '17'
+
+        hiltVersion = '2.48'
+        navigationVersion = '2.7.1'
+        coreKtxVersion = '1.10.1'
+        materialDesignVersion = '1.9.0'
+        archLifecycleVersion = '2.6.1'
+        constraintLayoutVersion = '2.1.4'
+
+        // Network
+        retrofitVersion = '2.9.0'
+        okhttpVersion = '4.10.0'
+
+        // Glide
+        glideVersion = '4.13.0'
+
+        // Swipe
+        swipeRefresh = '1.1.0'
+
+        // Lottie
+        lottieVersion = '6.1.0'
+        timber = '5.0.1'
+
+        // Amplify
+        amplifyCore = '1.33.0'
+        amplifyPlugin = '1.0.2'
+        androidDesugarJDK = '2.0.3'
+        awsAuthCognito = '1.34.0'
+
+        // Test
+        jUnitVersion = '4.13.2'
+        coroutineVersion = '1.7.3'
+        archCoreTestVersion = '2.2.0'
+        mockkVersion = '1.13.7'
+
+        // Exo player
+        exoPlayer = '2.19.1'
+
+        // New Relic
+        newRelicAgentVersion = '6.5.0'
+
+        plaidVersion = '3.9.0'
+
+        personaVersion = '2.2.40'
+
+        // Robolectric
+        robolectricVersion = '4.10.3'
+
+        // Firebase
+        firebaseVersion = '32.2.3'
+        googleServicesVersion = '4.3.13'
+        firebaseCommonVersion = '20.3.3'
+
+        // Braze
+        brazeVersion = '23.0.1'
+
+        // Zendesk
+        zendeskMessagingVersion = '2.7.0'
+
+        // Sendbird
+        sendbirdVersion = '3.2.2'
+
+        // Apptentive
+        apptentiveVerson = '6.0.0'
+
+        androidSecurityVersion = '1.1.0-alpha04'
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradle_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_plugin"
+
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
+        classpath "com.newrelic.agent.android:agent-gradle-plugin:$newRelicAgentVersion"
+        classpath "com.amplifyframework:amplify-tools-gradle-plugin:$amplifyPlugin"
+        classpath "com.google.gms:google-services:$googleServicesVersion"
+    }
+}
+
+plugins {
+    id 'com.android.application' version '8.1.0' apply false
+    id 'com.android.library' version '8.1.0' apply false
+    id 'org.jetbrains.kotlin.android' version '1.8.10' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
